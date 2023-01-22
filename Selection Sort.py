@@ -4,11 +4,23 @@ print("*************** BSCOE 2 - 2 *******************")
 print("************* Selection Sort  *****************")
 print("************** ---------- ********************")
 
+
 # The whole program is about Selection Sorting
 def sort(number):
-    for n in range(len(number)-1, 0, -1):
-        for u in range(n):
-            if number[u]>number[u+1]:
-                temp = number[u]
-                number[u] = number[u+1]
-                number[u+1] = temp
+
+    for n in range(9):
+        minpos = n
+        for u in range(n, 10):
+            if number[u] < number[minpos]:
+                minpos = u
+
+        temp = number[n]
+        number[n] = number[minpos]
+        number[minpos] = temp
+
+        print(number)
+
+
+number = [62, 50, 95, 92, 24, 89, 15, 13, 8, 51]
+sort(number)
+print("\nThe Final sorted Number is : ", number)
