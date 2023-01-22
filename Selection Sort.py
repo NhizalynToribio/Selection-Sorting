@@ -6,6 +6,9 @@ print("************** ---------- ********************")
 
 # The whole program is about Selection Sorting
 def sort(number):
-    for n in range(len(number)-1,0,-1):
+    for n in range(len(number)-1, 0, -1):
         for u in range(n):
-            if number[u]>number
+            if number[u]>number[u+1]:
+                temp = number[u]
+                number[u] = number[u+1]
+                number[u+1] = temp
