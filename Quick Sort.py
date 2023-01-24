@@ -15,3 +15,12 @@ def quick_sort(seq):
 
     greater_value = []
     lower_value = []
+
+    for item in seq:
+        if item > pivot:
+            greater_value.append(item)
+
+        else:
+            lower_value.append(item)
+
+    return quick_sort(lower_value) + [pivot] + quick_sort(greater_value)
