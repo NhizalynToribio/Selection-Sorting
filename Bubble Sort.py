@@ -16,3 +16,12 @@ def bubble_sort(mylist):
                 mylist[j + 1] = temp
 
                 print(mylist)
+
+
+mylist = [62, 50, 95, 92, 24, 89, 15, 13, 8, 51]
+print("\nThe Original Array List for Bubble Sorting:\n", mylist, "\n")
+
+print("The Process of Bubble Sorting:")
+bubble_sort(mylist)
+
+print("\nThe Final sorted Number using Bubble Sorting:\n ", mylist)
