@@ -5,7 +5,7 @@ print("*************** Merge Sort  *******************")
 print("**-------------------------------------------**")
 
 
-# The whole program is about Insertion Sorting
+# The whole program is about Merge Sorting
 
 def merge_sort(array):
     if len(array) > 1:
@@ -40,6 +40,7 @@ def merge_sort(array):
             j += 1
             k += 1
 
+        # Prints out the Process of Merge Sort
         print("The Left Array:", left_array)
         print("The Right Array:", right_array)
 
