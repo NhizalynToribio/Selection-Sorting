@@ -26,6 +26,11 @@ def quick_sort(seq):
     return quick_sort(lower_value) + [pivot] + quick_sort(greater_value)
 
 
-print(quick_sort([62, 50, 95, 92, 24, 89, 15, 13, 8, 51]))
+mynumber = [62, 50, 95, 92, 24, 89, 15, 13, 8, 51]
+print("\nThe Original Array List for Quick Sorting:\n", mynumber, "\n")
+
+
+print("\nThe Final sorted number using Quick Sort: \n",
+      quick_sort([62, 50, 95, 92, 24, 89, 15, 13, 8, 51]))
 
 
