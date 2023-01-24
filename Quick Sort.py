@@ -36,11 +36,11 @@ def partition(array, left, right):
     return i
 
 
-mynumber = [62, 50, 95, 92, 24, 89, 15, 13, 8, 51]
-print("\nThe Original Array List for Quick Sorting:\n", mynumber, "\n")
+array = [62, 50, 95, 92, 24, 89, 15, 13, 8, 51]
+print("\nThe Original Array List for Quick Sorting:\n", array, "\n")
 
+print("The Process of Quick Sorting:")
+quick_sort(array, 0, len(array) - 1)
 
-print("\nThe Final sorted number using Quick Sort: \n",
-      quick_sort([62, 50, 95, 92, 24, 89, 15, 13, 8, 51]))
-
+print("\nThe Final sorted Number using Quick Sorting:\n ", array)
 
