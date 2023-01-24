@@ -6,15 +6,12 @@ print("**-------------------------------------------**")
 
 
 # The whole program is about Quick Sorting
-def quick_sort(seq):
-    length = len(seq)
-    if length <= 1:
-        return seq
-    else:
-        pivot = seq.pop()
+def quick_sort(array, left, right):
+    if left < right:
+        partition_position = partition(array, left, right)
+        quick_sort(array, left, partition_position - 1)
+        quick_sort(array, partition_position + 1, right)
 
-    greater_value = []
-    lower_value = []
 
     for item in seq:
         if item > pivot:
