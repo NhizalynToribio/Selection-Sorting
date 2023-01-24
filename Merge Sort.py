@@ -44,5 +44,13 @@ def merge_sort(array):
         print("The Right Array:", right_array)
 
 
+mynumber = [62, 50, 95, 92, 24, 89, 15, 13, 8, 51]
+print("\nThe Original Array List for Merge Sorting:\n", mynumber, "\n")
+
+print("The Process of Merge Sorting:")
+merge_sort(mynumber)
+
+print("\nThe Final sorted Number using Merge Sorting:\n ", mynumber)
+
 
 
