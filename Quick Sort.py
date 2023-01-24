@@ -24,3 +24,8 @@ def quick_sort(seq):
             lower_value.append(item)
 
     return quick_sort(lower_value) + [pivot] + quick_sort(greater_value)
+
+
+print(quick_sort([62, 50, 95, 92, 24, 89, 15, 13, 8, 51]))
+
+
