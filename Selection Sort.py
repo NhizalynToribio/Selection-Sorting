@@ -6,7 +6,7 @@ print("************** ---------- ********************")
 
 
 # The whole program is about Selection Sorting
-def sort(number):
+def selection_sort(number):
 
     for n in range(9):
         minpos = n
@@ -22,5 +22,9 @@ def sort(number):
 
 
 number = [62, 50, 95, 92, 24, 89, 15, 13, 8, 51]
-sort(number)
-print("\nThe Final sorted Number is : ", number)
+print("\nThe Original Array List for Selection Sorting:\n", number, "\n")
+
+print("The Process of Selection Sorting:")
+selection_sort(number)
+
+print("\nThe Final sorted Number using Selection Sorting:\n ", number)
