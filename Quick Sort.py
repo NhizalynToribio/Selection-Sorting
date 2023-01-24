@@ -13,14 +13,27 @@ def quick_sort(array, left, right):
         quick_sort(array, partition_position + 1, right)
 
 
-    for item in seq:
-        if item > pivot:
-            greater_value.append(item)
+def partition(array, left, right):
 
-        else:
-            lower_value.append(item)
+    i = left
+    j = right - 1
+    pivot = array[right]
 
-    return quick_sort(lower_value) + [pivot] + quick_sort(greater_value)
+    while i < j:
+
+        while i < right and array[i] < pivot:
+            i += 1
+        while j > left and array[j] >= pivot:
+            j -= 1
+        if i < j:
+            array[i], array[j] = array[j], array[i]
+
+    if array[i] > pivot:
+        array[i], array[right] = array[right], array[i]
+
+    print(array)
+
+    return i
 
 
 mynumber = [62, 50, 95, 92, 24, 89, 15, 13, 8, 51]
